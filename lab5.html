@@ -65,6 +65,20 @@
         .d {
             position: relative;
         }
+        .e {
+            border-style: groove;
+            width: 300px;
+            height: 100px;
+            background-color: snow;
+            text-align: center;
+            line-height: 100px;
+            display: block;
+        }
+        .e:hover {
+            color:rgb(rgb(90, 215, 231));
+            background-color: aquamarine;
+            z-index: 3;
+        }
     </style>
         <div class="header">
              Жуков Олег
@@ -110,6 +124,11 @@
                 Все ярко, все бело кругом.
         </div>
 
+        <div class="e" style="position:relative; top: 50px; left: 150px; z-index: 0;"> Блок А</div>
+        <div class="e" style="position:relative; top: 40px; left: 170px; z-index: 1;"> Блок Б</div>
+        <div class="e" style="position:relative; top: 30px; left: 190px; z-index: 2;"> Блок В</div>
+        <div class="e" style="position:relative; top: 20px; left: 210px; z-index: 3;"> Блок Г</div>
+        <div class="e" style="position:relative; top: 10px; left: 230px; z-index: 4;"> Блок Д</div>
         </div>
     
 
