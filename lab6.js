@@ -51,3 +51,12 @@ function showAlert() {
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('user-data').style.backgroundColor = color;
 }
+
+function showm() {
+    alert('Hello')
+    let r = Math.round(Math.random()*255);
+    let g = Math.round(Math.random()*255);
+    let b = Math.round(Math.random()*255);
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('header').style.backgroundColor = color;
+}
