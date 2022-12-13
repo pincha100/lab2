@@ -23,7 +23,7 @@ function showAlert() {
             greeting += 'господин ';
         }
     }
-    alert(greeting + userName + '' + userSurname + '\n' + 'Ваш возраст: ' +userAge) 
+    alert(greeting + userName + '' + userSurname + '\n' + 'Ваш возраст: ' + userAge) 
     let r = Math.round(Math.rendom()*255);
     let g = Math.round(Math.rendom()*255);
     let b = Math.round(Math.rendom()*255);
@@ -32,7 +32,7 @@ function showAlert() {
 }
 
 function makeStairs() {
-    let steps = document.querySelector('#stairs');
+    let stairs = document.querySelector('#stairs');
     let stepCount = 20;
     for(let i = 0; i<stepCount; i++) {
         stairs.innerHTML +='<div class="step"</div>';
@@ -40,8 +40,8 @@ function makeStairs() {
 
     let steps = document.querySelectorAll('.step');
     for(let i = 0; i<steps.length; i++) {
-        steps{i}.style.left = (30 + 10*i) + 'px';
-        steps{i}.style.top = (30 + 80*i) + 'px';
-        steps{i}.innerHTML = 'Блок номер ' + i;
+        steps[i].style.left = (30 + 10*i) + 'px';
+        steps[i].style.top = (300 + 80*i) + 'px';
+        steps[i].innerHTML = 'Блок номер ' + i;
     }
 }
