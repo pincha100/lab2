@@ -14,14 +14,22 @@ function ShowDate(params) {
         result.innerHTML = 'С даты рождения прошло дней:' + daysCount;   
     }
 
-window.addEventListener('load', ShowDate);
-
-function showTime() {
-    let outTime = document.getElementById('time');
-    let currentTime = new Date();
-    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
-}
-
-window.addEventListener('load', showTime);
-setInterval(showTime, 1000); 
-
+    function showTime() {
+        let outTime = document.getElementById('time');
+        let currentTime = new Date();
+        outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+    }
+    window.addEventListener('load', showTime);
+    setInterval(showTime, 1000); 
+    
+    function showNewDate(params) {
+        let inputDate = document.querySelector('input[type=date]');
+        let birthday = new Date(inputDate.value);
+    
+        let days = document.querySelector('input[type=number]').value;
+    
+        let NewDate = birthday.getTime() + days*24*60*60*1000;
+        NewDate = new Date(NewDate);
+    
+        resultdays.innerHTML = 'Круглая дата:  ' + NewDate.toLocaleDateString("ru-RU");
+    }
