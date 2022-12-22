@@ -10,8 +10,18 @@ function ShowDate(params) {
         let birthday = new Date (inputDate.value);
         let daysCount = (today - birthday)/1000/60/60/24;
         let result = document.getElementById('result');
-        daysCount = Math.floor(daysCount); // округляем в меньшую сторону
+        daysCount = Math.floor(daysCount); 
         result.innerHTML = 'С даты рождения прошло дней:' + daysCount;   
     }
 
 window.addEventListener('load', ShowDate);
+
+function showTime() {
+    let outTime = document.getElementById('time');
+    let currentTime = new Date();
+    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+}
+
+window.addEventListener('load', showTime);
+setInterval(showTime, 1000); 
+

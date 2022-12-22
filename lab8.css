@@ -31,7 +31,14 @@ body {
     font-size: 36px;
     height: 20px;
     line-height: 50px;
-    padding-left: 250px;
+    padding-left: 200px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+.times {
+    color: white;
+        background: rgb(34, 173, 45);
+        height: 80px;
+        font-size: 40px;
+        padding-left: 1900px;
+}
