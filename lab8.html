@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Жуков Олег. ФБИ-03. Лабораторная работа 8</title>
-        <link rel="stylesheet" href="lab8.css" type="text/css">
-        <script src="lab8.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            Жуков Олег
-            <div id="time">0:00:00</div>
-        </div>
-        <div class="times"></div>
-            
-
-        <div class="content">
-            Сегодня <span id="today"></span>
-            <div>
-                Моя дата рождения:  <input type="date">
-            </div>
-            <div>
-                <button onclick="showDaysCount()">Рассчитать сколько прошло дней</button>
-            </div>
-            <div id="result"></div>
-        </div>
-
-        <div id="days"></div>
-        <div>
-            Количество дней:  <input type="number">
-        </div>
-        <div>
-            <div class ="knopka">
-            <button onclick="showDaysCount()">Рассчитать до круглой даты</button>
-        </div>
-        <div id="result1"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Жуков Олег. ФБИ-03. Лабораторная работа 8</title>
+    <link rel="stylesheet" href="lab8.css" type="text/css">
+    <script src="lab8.js"></script>
+</head>
+<body>
+    <div class="header">
+        Жуков Олег
+        <div id="time">0:00:00</div>
     </div>
-        
-        <div class="footer">
-            Факультет бизнеса, ФБИ-03, 3 курс, 2022 
+
+    <div class="content">
+        Сегодня: <span id="today"></span>
+        <div id="today"></div>
+        <div>
+            Моя дата рождения: <input type="date">
         </div>
-    </body>
+        <div>
+            <button onclick="showDaysCount()">Рассчитать, сколько прошло дней</button>
+        </div>
+        <div id="result"></div>
+
+        <div class = "days">
+            Количество дней: <input type="number">
+        </div>
+        <div class = "knopkaDays">
+            <button onclick="showNewDate()">Рассчитать до круглой даты</button>
+        </div>
+        <div id = "resultdays"></div>
+    </div>
+    <div class="footer">
+        Факультет бизнеса, ФБИ-03, 3 курс, 2022
+    </div>
+</body>
 </html>
