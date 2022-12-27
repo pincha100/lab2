@@ -45,3 +45,41 @@ function makeStairs() {
         steps[i].innerHTML = 'Блок номер ' + i;
     }
 }
+function snowflake() {
+    let snowflake = document.querySelector('#snowflake');
+    let snowflakeCount = 100;
+    for (let i = 0; i<snowflakeCount; i++) {
+        snowflake.innerHTML += '<img class="sneg" src="sneg.png"></img>'
+    }
+    let sneg = document.querySelectorAll('.sneg');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+    
+    for (let i = 0; i<sneg.length; i++) {
+        sneg[i].style.left = Math.random() * (screenWidth) + 'px';
+        sneg[i].style.top = Math.random() * (screenHeight) + 'px';
+        sneg[i].style.width = Math.random() * 100 + 'px';
+    }
+}
+
+function makeStih(){
+    let steps = document.querySelectorAll('.stih');
+    for (let i = 0; i<steps.length; i++) {
+        let r = Math.round(Math.random()*255);
+        let g = Math.round(Math.random()*255);
+        let b = Math.round(Math.random()*255);
+        steps[i].style.color = 'rgb(' + r + ',' + g + ',' + b +')';
+        r = Math.round(Math.random()*255);
+        g = Math.round(Math.random()*255);
+        b = Math.round(Math.random()*255);
+        steps[i].style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b +')';
+        steps[i].style.fontSize = (i + 20)+'px';
+        steps[i].style.width = (i * 20 + 300)+'px';
+    }
+}
+
+function All() {
+    makeStairs();
+    snowflake();
+    makeStih()
+}
